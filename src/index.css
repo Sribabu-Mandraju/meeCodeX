@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css */
+body {
+  background: #010a1f;
+}
+
+.uline {
+  position: relative;
+  display: inline-block;
+}
+
+.uline:hover::before {
+  width: 100%;
+}
+
+.uline::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.gradient-text {
+  font-weight: 600;
+  background: linear-gradient(to bottom, #a1f609 0%, #00deeb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-p {
+  @apply w-full max-w-[1280px] mx-auto mt-12 max-lg:mt-4 mb-8 px-8 max-md:px-2;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px #101c36; /* stroke color */
+  text-stroke: 2px #101c36;
+}
