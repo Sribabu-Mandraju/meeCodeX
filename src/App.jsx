@@ -9,7 +9,7 @@ import Testimonals from "./components/Testimonals";
 
 function App() {
   return (
-    <main className="w-full text-white">
+    <main className="w-full text-white overflow-hidden">
       <Hero />
       <Features />
       <Membership />

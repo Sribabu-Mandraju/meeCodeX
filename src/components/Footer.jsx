@@ -3,18 +3,18 @@ import { social } from "../constant";
 
 const Footer = () => {
   return (
-    <footer className="mt-12 py-8 w-full">
+    <footer className="mt-12 py-8 w-full border-t-[0.5px] border-gray-800">
       <div className="max-w-[1280px] mx-auto grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 px-8 max-md:px-4 max-md:grid-cols-1">
         <div className="max-md:mb-10">
           <h1 className="text-2xl font-semibold mb-8">Sepnoty</h1>
-          <h2 className="text-base mb-2.5 text-gray-300">Follow</h2>
+          <h2 className="text-base mb-2.5 text-gray-300">Follow Us</h2>
           <div className="flex items-center gap-2.5">
             {social.map((s) => {
               const IconComponent = s.icon;
               return (
                 <a key={s.id} href={s.link}>
                   <div className="rounded-full p-2 bg-gray-900 cursor-pointer border border-gray-800">
-                    <IconComponent size={10} />
+                    <IconComponent size={13} />
                   </div>
                 </a>
               );
@@ -56,6 +56,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-8 w-full text-center text-gray-400">
+        <p>© 2024 Sepnoty Technologies Pvt Ltd. All rights reserved.</p>
       </div>
     </footer>
   );

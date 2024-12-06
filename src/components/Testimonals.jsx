@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion"; // Import framer-motion for animation
 import testimonalbg from "../assets/testimonalbg.png";
 import line from "../assets/icons/line.svg";
 import chevronLeft from "../assets/icons/chevron-left.svg";
@@ -10,7 +11,6 @@ import { testimonials } from "../constant";
 const Testimonals = () => {
   const scrollContainerRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-
   // eslint-disable-next-line
   const [cardWidth, setCardWidth] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -61,6 +61,13 @@ const Testimonals = () => {
     }
   };
 
+  // Disable mouse scroll
+  const handleWheel = (e) => {
+    if (scrollContainerRef.current) {
+      e.preventDefault(); // Prevent scrolling with mouse
+    }
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (
@@ -90,22 +97,43 @@ const Testimonals = () => {
     handleResize();
     window.addEventListener("resize", handleResize);
 
+    // Add wheel event listener to disable mouse scroll
+    const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      scrollContainer.addEventListener("wheel", handleWheel, {
+        passive: false,
+      });
+    }
+
     return () => {
       window.removeEventListener("resize", handleResize);
+
+      // Clean up the wheel event listener
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("wheel", handleWheel);
+      }
     };
   }, []);
 
   return (
     <div
-      className="container-p bg-cover bg-center max-lg:bg-none"
+      id="testimonials"
+      className="container-p py-8 bg-cover bg-center max-lg:bg-none"
       style={{
         backgroundImage: `url('${testimonalbg}')`,
       }}
     >
-      <div className="mt-32 w-full flex items-center justify-center">
+      {/* Heading animation: Bottom to Top */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mt-12 pt-16 w-full flex items-center justify-center"
+      >
         <div className="flex flex-col relative items-center justify-center">
-          <h1 className="absolute w-full top-[-20px] z-[1] left-[40%] -translate-x-1/2 uppercase text-[2.9rem] font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
-            Testimonals
+          <h1 className="absolute w-full top-[-20px] z-[-1] left-[0%] max-md:left-[40%] -translate-x-1/2 uppercase text-7xl max-md:text-4xl font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
+            Testimonials
           </h1>
           <div className="mx-6 w-14 mb-2">
             <img src={line} alt="----" />
@@ -115,7 +143,9 @@ const Testimonals = () => {
             Support <span className="text-[#F3CA49]">& Services</span>
           </h1>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Testimonials Section */}
       <div className="mt-16 flex items-center gap-8">
         <img
           src={chevronLeft}
@@ -123,9 +153,12 @@ const Testimonals = () => {
           className="w-10 max-md:hidden max-md:w-8 h-10 max-md:h-8 cursor-pointer"
           onClick={handleScrollLeft}
         />
-        <div
+        <motion.div
           ref={scrollContainerRef}
           className="w-full min-h-[400px] flex items-center overflow-x-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
           {testimonials.map((testimonial) => (
             <div
@@ -156,7 +189,7 @@ const Testimonals = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
         <img
           src={chevronRight}
           alt="chevron-right"

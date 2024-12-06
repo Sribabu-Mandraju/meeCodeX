@@ -1,21 +1,30 @@
 import Lottie from "lottie-react";
 import line from "../assets/icons/line.svg";
-import aboutAnimation from "../assets/lotties/about.json";
+import aboutAnimation from "../assets/lotties/speaker.json";
 import { useState } from "react";
 import { qsn } from "../constant";
 import { motion } from "framer-motion";
 
 const Seo = () => {
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState(1);
 
   const toggleFAQ = (id) => {
     setActiveId(activeId === id ? null : id);
   };
 
   return (
-    <div className="container-p gap-5 grid grid-cols-2 max-md:grid-cols-1 place-items-center">
+    <div
+      id="faq"
+      className="container-p py-8 gap-5 grid grid-cols-2 max-md:grid-cols-1 place-items-center"
+    >
       {/* Left section with FAQ */}
-      <div className="relative w-full order-1 max-md:order-2 max-md:px-2 max-md:mt-5">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }}
+        className="relative w-full order-1 max-md:order-2 max-md:px-2 max-md:mt-5"
+      >
         <h1 className="absolute top-[-15px] z-[-1] left-[-2px] uppercase text-7xl font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
           FAQ
         </h1>
@@ -31,20 +40,19 @@ const Seo = () => {
           understand our services and how we can support your business goals.
         </p>
 
-        <div className="w-full max-w-[450px] mt-6">
+        <div className="w-full max-w-[450px] max-md:max-w-full mt-6">
           {qsn.map((q) => (
             <div key={q.id} className="bg-[#292738]">
               <div
-                onClick={() => toggleFAQ(q.id)}
                 className="cursor-pointer border-b-[0.5px] border-gray-900 flex items-center justify-between py-2 px-3 text-lg font-medium text-white transition-all"
+                onClick={() => toggleFAQ(q.id)}
               >
                 {q.qsn}
                 <span className="text-xl">{activeId === q.id ? "-" : "+"}</span>
               </div>
 
-              {/* Use Framer Motion for animation */}
               <motion.div
-                initial={{ height: 0 }}
+                initial={{ height: 0, opacity: 0 }}
                 animate={{
                   height: activeId === q.id ? "auto" : 0,
                   opacity: activeId === q.id ? 1 : 0,
@@ -59,12 +67,18 @@ const Seo = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      {/* Right section with animation */}
-      <div className="w-full order-2 max-md:order-1 max-md:max-w-[300px]">
+      {/* Right section with Lottie animation */}
+      <motion.div
+        className="w-full order-2 max-md:order-1 max-md:max-w-[300px]"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <Lottie animationData={aboutAnimation} loop={true} />
-      </div>
+      </motion.div>
     </div>
   );
 };

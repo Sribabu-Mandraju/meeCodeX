@@ -68,4 +68,11 @@ export const testimonials = [
     content:
       "Sepnoty has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
   },
+  {
+    id: 5,
+    name: "Michael Brown",
+    position: "Founder at GreenTech",
+    content:
+      "Sepnoty has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
+  },
 ];

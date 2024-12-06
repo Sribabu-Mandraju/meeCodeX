@@ -1,12 +1,13 @@
+import { motion } from "framer-motion";
 import line from "../assets/icons/line.svg";
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Membership = () => {
   return (
-    <div className="container-p">
+    <div className="container-p pt-2" id="join">
       <div className="mt-16 w-full flex items-center justify-center">
         <div className="flex flex-col relative items-center justify-center">
-          <h1 className="absolute w-full top-[-20px] z-[1] left-[57%] -translate-x-1/2 uppercase text-7xl font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
+          <h1 className="absolute w-full top-[-20px] z-[-1] left-[57%] -translate-x-1/2 uppercase text-7xl max-md:text-4xl max-md:left-[80%] font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
             Join Us
           </h1>
           <div className="mx-6 w-14 mb-4">
@@ -19,9 +20,17 @@ const Membership = () => {
           </h1>
         </div>
       </div>
-      <div className="mt-16 mb-6 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 place-items-center gap-16">
-        <div className="w-[98%] group cursor-pointer max-w-[480px] max-lg:max-w-[320px]">
-          <div className="w-full rounded-lg text-white bg-[#011125] px-6 py-10">
+
+      <div className="mt-16 mb-6 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-16">
+        {/* First Card with scroll-triggered animation */}
+        <motion.div
+          className="w-[98%] group cursor-pointer flex justify-center max-lg:justify-start max-md:justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          // viewport={{ once: true }}
+        >
+          <div className="w-full max-w-[480px] max-lg:max-w-[380px] max-md:max-w-[320px] rounded-lg text-white cardGradient px-6 py-10">
             <h3 className="text-xl font-semibold font-space-grotesk">Basic</h3>
             <h5 className="text-base font-[300]">Best for personal use.</h5>
             <h1
@@ -64,10 +73,17 @@ const Membership = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="w-[98%]  group cursor-pointer max-w-[480px] max-lg:max-w-[320px]">
-          <div className="w-full rounded-lg scale-105 max-lg:scale-100 text-white bg-[#011125] px-6 py-10">
+        {/* Second Card without delay */}
+        <motion.div
+          className="w-[98%] group cursor-pointer flex justify-center max-lg:justify-end max-md:justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          // viewport={{ once: true }}
+        >
+          <div className="w-full max-w-[480px] max-lg:max-w-[380px] max-md:max-w-[320px] rounded-lg scale-105 max-lg:scale-100 text-white cardGradient px-6 py-10">
             <h3 className="text-xl font-semibold font-space-grotesk">
               Enterprise
             </h3>
@@ -120,10 +136,17 @@ const Membership = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="w-[98%]  group cursor-pointer max-w-[480px] max-lg:max-w-[320px]">
-          <div className="w-full rounded-lg text-white bg-[#011125] px-6 py-10">
+        {/* Third Card with scroll-triggered animation */}
+        <motion.div
+          className="w-[98%] group cursor-pointer flex justify-center max-lg:justify-start max-md:justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          // viewport={{ once: true }}
+        >
+          <div className="w-full rounded-lg max-w-[480px] max-lg:max-w-[380px] max-md:max-w-[320px] text-white cardGradient px-6 py-10">
             <h3 className="text-xl font-semibold font-space-grotesk">
               Business
             </h3>
@@ -174,7 +197,7 @@ const Membership = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
