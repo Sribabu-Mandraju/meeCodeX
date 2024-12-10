@@ -17,18 +17,20 @@ const Features = () => {
         id="features"
         className="container-p pt-12 gap-5 grid grid-cols-5 max-md:grid-cols-1"
       >
-        <div className="w-full max-md:max-w-[300px] flex justify-start col-span-2 mb-12">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <Lottie animationData={personAnimation} loop={true} />
-          </motion.div>
+        <div className="w-full flex items-center justify-center col-span-2 mb-12">
+          <div className="w-full max-md:max-w-[300px] flex justify-start max-md:justify-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <Lottie animationData={personAnimation} loop={true} />
+            </motion.div>
+          </div>
         </div>
 
-        <div className="w-full col-span-3 max-md:grid-cols-1 max-md:px-2 max-lg:mt-5 flex justify-end">
+        <div className="w-full col-span-3 max-md:grid-cols-1 max-md:px-2 max-lg:mt-5 flex justify-end max-md:justify-start md:items-center">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -42,12 +44,12 @@ const Features = () => {
               <h1 className="absolute top-[-40px] z-[-1] left-[-10px] uppercase text-7xl max-md:text-4xl max-md:left-0 max-md:top-[-35px] font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
                 Features
               </h1>
-              <h1 className="text-3xl text-white font-semibold w-full max-w-[550px]">
+              <h1 className="text-3xl text-white font-semibold w-full max-w-[550px] max-md:max-w-full">
                 <span className="gradient-text">Explore</span> Our Professional
                 Business <span className="text-primary">Solutions</span>
               </h1>
               <motion.div
-                className="grid grid-cols-2 mt-4 max-sm:grid-cols-1"
+                className="grid grid-cols-2 mt-4 max-sm:grid-cols-1 gap-2"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -77,7 +79,7 @@ const Features = () => {
                 ].map((item, index) => (
                   <motion.div
                     key={index}
-                    className="flex gap-2.5 items-center mt-4"
+                    className="flex md:bg-cardbg p-2 rounded-md gap-3.5 items-center mt-2"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -85,9 +87,7 @@ const Features = () => {
                     <img src={item.img} alt={item.title} className="w-8 h-8" />
                     <div className="flex flex-col">
                       <h1 className="text-white font-semibold">{item.title}</h1>
-                      <h3 className="text-sm text-[#67687A]">
-                        {item.subtitle}
-                      </h3>
+                      <h3 className="text-sm text-gray-400">{item.subtitle}</h3>
                     </div>
                   </motion.div>
                 ))}
@@ -100,7 +100,7 @@ const Features = () => {
       {/* Second Section with another Lottie */}
       <div className="container-p gap-5 grid grid-cols-5 max-md:grid-cols-1 place-items-center">
         <div className="relative w-full order-1 max-md:order-2 col-span-3 max-md:grid-cols-1 max-md:px-2 max-md:mt-8">
-          <h1 className="absolute top-[-20px] z-[-1] left-[-20px] uppercase text-7xl max-md:text-4xl max-md:left-0 font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
+          <h1 className="absolute top-[-20px] z-[-1] left-[-10px] uppercase text-7xl max-md:text-4xl max-md:left-0 font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
             WHO
           </h1>
           <div className="mx-6 w-14 mb-4">

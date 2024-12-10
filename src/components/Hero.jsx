@@ -15,8 +15,16 @@ import line from "../assets/icons/line.svg";
 import chevronLeft from "../assets/icons/chevron-left.svg";
 import chevronRight from "../assets/icons/chevron-right.svg";
 
-import swift from "../assets/icons/swift.svg";
-import vite from "../assets/icons/vite.svg";
+import aws from "../assets/icons/brands/aws.svg";
+import js from "../assets/icons/brands/js.svg";
+import swift from "../assets/icons/brands/swift.svg";
+import vite from "../assets/icons/brands/vite.svg";
+import python from "../assets/icons/brands/python.svg";
+import cloud from "../assets/icons/brands/cloud.svg";
+import metamask from "../assets/icons/brands/metamask.svg";
+import github from "../assets/icons/brands/github.svg";
+import django from "../assets/icons/brands/django.svg";
+import reactSvg from "../assets/icons/brands/react.svg";
 
 const Hero = () => {
   const scrollContainerRef = useRef(null);
@@ -70,15 +78,15 @@ const Hero = () => {
         <Header />
 
         {/* Hero */}
-        <div className="w-full max-w-[1280px] overflow-hidden mx-auto mt-20 max-lg:mt-0 px-8 max-md:px-2 grid grid-cols-2 max-lg:grid-cols-1 place-items-center justify-items-center gap-2">
+        <div className="w-full max-w-[1280px] overflow-hidden mx-auto mt-20 max-md:mt-0 px-8 max-md:px-2 grid grid-cols-2 max-md:grid-cols-1 place-items-center justify-items-center gap-2">
           <motion.div
-            className="relative max-lg:px-2 order-1 max-lg:order-2 max-lg:mt-10"
+            className="relative max-md:px-2 order-1 max-md:order-2 max-md:mt-10"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             // viewport={{ once: true }}
           >
-            <div className="absolute top-[-80px] max-lg:top-[-50px] right-0">
+            <div className="absolute top-[-80px] max-md:top-[-50px] right-0">
               <img alt="bulb" src={bulb} className="w-28 h-24" />
             </div>
 
@@ -109,7 +117,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            className="order-2 max-lg:order-1"
+            className="order-2 max-md:order-1"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -125,13 +133,13 @@ const Hero = () => {
           className="pt-16 mb-6 px-4 w-full max-w-[1000px] mx-auto flex flex-col gap-2"
         >
           <motion.div
-            className="flex items-center justify-center max-lg:flex-col gap-4 border-b pb-8 border-gray-800"
+            className="flex items-center justify-center max-md:flex-col gap-4 border-b pb-8 border-gray-800"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             // viewport={{ once: true }}
           >
-            <div className="w-1/2 z-[1] max-lg:w-full relative">
+            <div className="w-1/2 z-[1] max-md:w-full relative">
               <div className="mx-6 w-14 mb-4">
                 <img src={line} alt="----" />
               </div>
@@ -144,8 +152,8 @@ const Hero = () => {
                 Brands
               </h1>
             </div>
-            <div className="w-1/2 max-lg:w-full">
-              <p className="p-2 max-lg:p-0 text-gray-400 text-[0.9rem]">
+            <div className="w-1/2 max-md:w-full">
+              <p className="p-2 max-md:p-0 text-gray-400 text-[0.9rem]">
                 At Sepnoty, we’re dedicated to creating impactful, empathetic AI
                 solutions that connect people and brands across the globe,
                 fostering growth and meaningful interactions.
@@ -175,16 +183,10 @@ const Hero = () => {
             >
               {/* Add other brand logos here */}
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
+                <img src={aws} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
+                <img src={js} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
                 <img src={vite} className="w-5 h-5" />
@@ -196,68 +198,22 @@ const Hero = () => {
                 <img src={vite} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
+                <img src={python} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
+                <img src={cloud} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
+                <img src={metamask} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
+                <img src={github} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
+                <img src={django} className="w-5 h-5" />
               </div>
               <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={vite} className="w-5 h-5" />
-              </div>
-              <div className="bg-[#1E2235] min-w-[40px] p-2.5 pb-2 rounded-md">
-                <img src={swift} className="w-5 h-5" />
+                <img src={reactSvg} className="w-5 h-5" />
               </div>
             </div>
 
