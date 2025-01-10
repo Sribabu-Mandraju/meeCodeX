@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import Membership from "./components/Membership";
 import Seo from "./components/Seo";
 import Testimonals from "./components/Testimonals";
-
+import YourReq from "./components/YourReq";
 function App() {
   return (
     <main className="w-full text-white overflow-hidden">
@@ -16,6 +16,7 @@ function App() {
       <Seo />
       <Achievements />
       <Testimonals />
+       <YourReq/>
       <Contact />
       <Footer />
     </main>
