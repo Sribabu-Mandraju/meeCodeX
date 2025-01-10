@@ -42,6 +42,7 @@ export const social = [
 export const testimonials = [
   {
     id: 1,
+
     name: "John Doe",
     position: "CEO at Acme Corp",
     content:
@@ -49,6 +50,7 @@ export const testimonials = [
   },
   {
     id: 2,
+
     name: "Jane Smith",
     position: "Marketing Director at TechWave",
     content:
@@ -56,6 +58,7 @@ export const testimonials = [
   },
   {
     id: 3,
+
     name: "Alice Johnson",
     position: "Product Manager at InnovateX",
     content:
@@ -63,6 +66,7 @@ export const testimonials = [
   },
   {
     id: 4,
+
     name: "Michael Brown",
     position: "Founder at GreenTech",
     content:
@@ -70,6 +74,7 @@ export const testimonials = [
   },
   {
     id: 5,
+
     name: "Michael Brown",
     position: "Founder at GreenTech",
     content:

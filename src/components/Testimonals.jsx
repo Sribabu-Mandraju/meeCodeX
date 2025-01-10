@@ -129,7 +129,7 @@ const Testimonals = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="mt-12 pt-16 w-full flex items-center justify-center"
+        className="mt-10 pt-16 w-full flex items-center justify-center"
       >
         <div className="flex flex-col relative items-center justify-center">
           <h1 className="absolute w-full top-[-20px] z-[-1] left-[0%] max-md:left-[40%] -translate-x-1/2 uppercase text-7xl max-md:text-4xl font-bold text-transparent stroke-2 text-stroke stroke-gray-900">
@@ -146,7 +146,7 @@ const Testimonals = () => {
       </motion.div>
 
       {/* Testimonials Section */}
-      <div className="mt-16 flex items-center gap-8">
+      <div className="mt-14 flex items-center gap-8 py-[30px]">
         <img
           src={chevronLeft}
           alt="chevron-left"
@@ -155,7 +155,7 @@ const Testimonals = () => {
         />
         <motion.div
           ref={scrollContainerRef}
-          className="w-full min-h-[400px] flex items-center overflow-x-auto"
+          className="w-full min-h-[400px] flex items-center overflow-x-auto p-[30px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -165,7 +165,8 @@ const Testimonals = () => {
               key={testimonial.id}
               className="testimonial-card flex items-center justify-center min-w-[50%] max-lg:min-w-full p-2"
             >
-              <div className="flex bg-cardbg justify-center  max-w-[420px] items-center h-full py-8 px-8 rounded-sm">
+              <div className="flex relative bg-cardbg justify-center  max-w-[420px] items-center h-full py-8 px-8 rounded-xl">
+               <div className="absolute h-[100px] w-[100px] rounded-full bg-white top-[-35px] border-[2px]"></div>
                 <div className="text-white text-xl font-semibold">
                   <img src={quotes} alt="Quotes" className="w-10 h-10" />
                   <p className="text-lg py-1 font-[400] text-gray-400">

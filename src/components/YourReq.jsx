@@ -2,11 +2,17 @@ import React from 'react';
 import Lottie from "lottie-react";
 import formAnimation from "../assets/lotties/about.json";
 import line from "../assets/icons/line.svg";
+import { motion } from "framer-motion";
 
 const YourReq = () => {
   return (
     <div className="container-p gap-8 grid md:grid-cols-2 grid-cols-1 place-items-center justify-content-center">
-      <div className="w-full px-4 md:mt-5 order-2 md:order-1">
+       <motion.div
+          className="w-full max-md:px-2 max-lg:mt-5  order-2 md:order-1"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: false }}>
         <div className="relative">
           <h1 className="absolute md:top-[-40px] z-[-1] left-[-10px]  md:text-7xl text-6xl :top-[-30px] font-bold text-transparent stroke-2 text-stroke stroke-[#111827]">
             FORM
@@ -59,11 +65,19 @@ const YourReq = () => {
             </button>
           </form>
         </div>
-      </div>
+      
+        </motion.div>
 
-      <div className="w-full max-md:max-w-[300px] flex justify-center items-center order-1 md:order-2">
+   
+      <motion.div
+          className="w-full mt-2 max-md:max-w-[300px] mb-12 order-1 md:order-2"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
         <Lottie animationData={formAnimation} loop={true} />
-      </div>
+        </motion.div>
     </div>
   );
 };
