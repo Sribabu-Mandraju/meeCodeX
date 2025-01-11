@@ -58,13 +58,13 @@ const Features = () => {
                 {[
                   {
                     img: empathetic,
-                    title: "Empathetic AI",
-                    subtitle: "Human-Centered Innovation",
+                    title: "Search Engine Optimization",
+                    subtitle: " driving organic traffic",
                   },
                   {
                     img: target,
                     title: "Web & App Development",
-                    subtitle: "Tailored Solutions",
+                    subtitle: "effectively represent your brand and engage",
                   },
                   {
                     img: graph,

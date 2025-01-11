@@ -91,7 +91,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="Submit"
-                className="flex items-center rounded justify-center gap-2 w-full mt-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500"
+                className="flex items-center rounded justify-center gap-2 w-full mt-3 py-2 bg-gradient-to-l from-blue-500 to-purple-500"
               >
                 Send it to us <IoIosRocket />
               </button>

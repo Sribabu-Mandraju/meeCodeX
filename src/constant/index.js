@@ -12,17 +12,17 @@ export const qsn = [
   {
     id: 1,
     qsn: "What is AZ LOGIC ?",
-    ans: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veniam vel corporis quo deserunt, quia rem quod accusantium quam ad!",
+    ans: "Welcome to AZLogic Solutions, Inc. We specialize in delivering comprehensive software solutions tailored to your business needs, all within a budget-friendly framework.",
   },
   {
     id: 2,
-    qsn: "How can I join the Sepnotian Club ?",
-    ans: "Our membership plan, priced at ₹24,450, is currently available at an 80% discount for ₹4,890. Sign up on our AZ LOGIC Club page to enjoy exclusive benefits.",
+    qsn: "Why Choose Us ?",
+    ans: " We provide high-quality software development services that fit within your budget, making technology accessible for businesses of all sizes.",
   },
   {
     id: 3,
-    qsn: "What is Tepnoty?",
-    ans: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veniam vel corporis quo deserunt, quia rem quod accusantium quam ad!",
+    qsn: "Our Uniqness ",
+    ans: "We specialize in developing Minimum Viable Products (MVPs) to help you quickly launch and validate your business ideas in the market.",
   },
 ];
 

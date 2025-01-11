@@ -96,14 +96,14 @@ const Hero = () => {
             </h1>
 
             <p className="mt-3 text-gray-400 pr-3 text-[0.9rem]">
-              Join a community that values empathy, connection, and meaningful
-              support. Discover AI-driven solutions designed to uplift and
-              empower every interaction.
+              Welcome to AZLogic Solutions, Inc. We specialize in delivering
+              comprehensive software solutions tailored to your business needs,
+              all within a budget-friendly framework.
             </p>
             <div className="flex gap-4 text-[0.9rem] text-gray-400 flex-wrap w-full mt-6">
               <div className="flex items-center gap-2">
                 <img src={icon1} alt="icon1" className="w-4 h-4" />
-                <h1>Secure AI Conversations</h1>
+                <h1>Robust Apps and Websites</h1>
               </div>
               <div className="flex items-center gap-2">
                 <img src={icon2} alt="icon1" className="w-4 h-4" />
@@ -154,9 +154,16 @@ const Hero = () => {
             </div>
             <div className="w-1/2 max-md:w-full">
               <p className="p-2 max-md:p-0 text-gray-400 text-[0.9rem]">
-                At AZ LOGIC, we’re dedicated to creating impactful, empathetic AI
-                solutions that connect people and brands across the globe,
-                fostering growth and meaningful interactions.
+                We create responsive and user-friendly websites that effectively
+                represent your brand and engage your audience.Our team develops
+                intuitive mobile applications for both iOS and Android
+                platforms, enhancing your business's reach and accessibility.We
+                design visually appealing and user-centric interfaces that
+                provide an optimal user experience, ensuring your digital
+                products are both functional and engaging.We offer comprehensive
+                digital marketing services, including social media management,
+                content creation, and online advertising, to help your business
+                grow in the digital landscape.
               </p>
             </div>
           </motion.div>

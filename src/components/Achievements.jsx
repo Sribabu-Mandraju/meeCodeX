@@ -31,9 +31,9 @@ const Achievements = () => {
           <span className="text-primary">Milestones</span>
         </h1>
         <p className="text-gray-400 mt-1 max-w-[500px]">
-          Discover the milestones that have shaped our journey. Our achievements
-          reflect our commitment to innovation, empathy, and creating meaningful
-          impact.
+          Our team of skilled professionals is dedicated to delivering solutions
+          that meet your specific business requirements and exceed your
+          expectations.
         </p>
       </motion.div>
 
