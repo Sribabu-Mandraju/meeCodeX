@@ -14,7 +14,7 @@ const Membership = () => {
             <img src={line} alt="----" />
           </div>
           <h1 className="text-2xl z-[1] text-center text-white font-semibold">
-            Join Sepnoty Club <br />
+            Join AZ LOGIC Club <br />
             for exclusive{" "}
             <span className="text-[#F3CA49]">growth resources</span>
           </h1>

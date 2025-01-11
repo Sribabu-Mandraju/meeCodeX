@@ -144,7 +144,7 @@ const Hero = () => {
                 <img src={line} alt="----" />
               </div>
               <h1 className="text-3xl z-[1] text-white font-semibold">
-                Sepnoty: <span className="gradient-text">Building</span>{" "}
+                AZ LOGIC: <span className="gradient-text">Building</span>{" "}
                 Meaningful Connections{" "}
                 <span className="text-primary">Worldwide..!</span>
               </h1>
@@ -154,7 +154,7 @@ const Hero = () => {
             </div>
             <div className="w-1/2 max-md:w-full">
               <p className="p-2 max-md:p-0 text-gray-400 text-[0.9rem]">
-                At Sepnoty, we’re dedicated to creating impactful, empathetic AI
+                At AZ LOGIC, we’re dedicated to creating impactful, empathetic AI
                 solutions that connect people and brands across the globe,
                 fostering growth and meaningful interactions.
               </p>

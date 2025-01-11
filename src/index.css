@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
 /* src/index.css */
 :root {
   scroll-behavior: smooth;
@@ -65,5 +68,12 @@ body {
 .logo {
   font-family: "Playwrite IE", cursive;
   font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 900;
   font-style: normal;
 }

@@ -11,13 +11,13 @@ import {
 export const qsn = [
   {
     id: 1,
-    qsn: "What is Sepnoty ?",
+    qsn: "What is AZ LOGIC ?",
     ans: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veniam vel corporis quo deserunt, quia rem quod accusantium quam ad!",
   },
   {
     id: 2,
     qsn: "How can I join the Sepnotian Club ?",
-    ans: "Our membership plan, priced at ₹24,450, is currently available at an 80% discount for ₹4,890. Sign up on our Sepnoty Club page to enjoy exclusive benefits.",
+    ans: "Our membership plan, priced at ₹24,450, is currently available at an 80% discount for ₹4,890. Sign up on our AZ LOGIC Club page to enjoy exclusive benefits.",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export const testimonials = [
     name: "John Doe",
     position: "CEO at Acme Corp",
     content:
-      "The team at Sepnoty truly understands our needs. Their resources have empowered our product development team to innovate faster.",
+      "The team at AZ LOGIC truly understands our needs. Their resources have empowered our product development team to innovate faster.",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const testimonials = [
     name: "Jane Smith",
     position: "Marketing Director at TechWave",
     content:
-      "Sepnoty has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
+      "AZ LOGIC has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ export const testimonials = [
     name: "Alice Johnson",
     position: "Product Manager at InnovateX",
     content:
-      "The team at Sepnoty truly understands our needs. Their resources have empowered our product development team to innovate faster.",
+      "The team at AZ LOGIC truly understands our needs. Their resources have empowered our product development team to innovate faster.",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const testimonials = [
     name: "Michael Brown",
     position: "Founder at GreenTech",
     content:
-      "Sepnoty has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
+      "AZ LOGIC has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
   },
   {
     id: 5,
@@ -78,6 +78,6 @@ export const testimonials = [
     name: "Michael Brown",
     position: "Founder at GreenTech",
     content:
-      "Sepnoty has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
+      "AZ LOGIC has been a valuable partner. Their resources helped us streamline our operations and improve efficiency across the board.",
   },
 ];
