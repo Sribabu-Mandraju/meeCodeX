@@ -17,8 +17,9 @@ const Testimonals = () => {
 
   const handleResize = () => {
     if (scrollContainerRef.current) {
-      const card =
-        scrollContainerRef.current.querySelector(".testimonial-card");
+      const card = scrollContainerRef.current.querySelector(
+        ".testimonial-card"
+      );
       if (card) {
         setCardWidth(card.offsetWidth);
       }
@@ -166,7 +167,7 @@ const Testimonals = () => {
               className="testimonial-card flex items-center justify-center min-w-[50%] max-lg:min-w-full p-2"
             >
               <div className="flex relative bg-cardbg justify-center  max-w-[420px] items-center h-full py-8 px-8 rounded-xl">
-               <div className="absolute h-[100px] w-[100px] rounded-full bg-white top-[-35px] border-[2px]"></div>
+                <div className="absolute h-[100px] w-[100px] rounded-full bg-white top-[-35px] border-[2px]"></div>
                 <div className="text-white text-xl font-semibold">
                   <img src={quotes} alt="Quotes" className="w-10 h-10" />
                   <p className="text-lg py-1 font-[400] text-gray-400">

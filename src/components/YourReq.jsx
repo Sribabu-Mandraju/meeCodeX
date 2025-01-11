@@ -59,7 +59,7 @@ const YourReq = () => {
             </select>
             <button
               type="Submit"
-              className="flex items-center rounded justify-center gap-2 w-full mt-3 py-2 bg-primary"
+              className="flex items-center rounded justify-center gap-2 w-full mt-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500"
             >
               Submit
             </button>

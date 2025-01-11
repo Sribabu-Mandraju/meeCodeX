@@ -16,7 +16,7 @@ function App() {
       <Seo />
       <Achievements />
       <Testimonals />
-       <YourReq/>
+       <YourReq />
       <Contact />
       <Footer />
     </main>
