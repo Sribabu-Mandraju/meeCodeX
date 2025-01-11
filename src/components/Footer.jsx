@@ -35,16 +35,19 @@ const Footer = () => {
           <h1 className="text-xl font-semibold mb-3">Contact</h1>
           <div className="flex flex-col gap-3">
             <h2 className="font-[400] text-gray-300">
-              785 Main Street, 2nd Block melbourne, australia
+              1234 Innovation Drive, Suite 100, Tucson, AZ 85701
             </h2>
-            <h2 className="font-[400] text-gray-300">support@gmail.com</h2>
-            <h2 className="font-[400] text-gray-300">+000 (123) 456 88</h2>
+            <h2 className="font-[400] text-gray-300">
+              info@azlogicsolutions.com
+            </h2>
+            <h2 className="font-[400] text-gray-300">+(123) 456-7890</h2>
           </div>
         </div>
         <div className="max-md:mb-10">
           <h1 className="text-lg mb-3">Newsletter</h1>
-          <h2 className="text-xl font-semibold">
-            Get Every Single Update to Join Our Newsletter
+          <h2 className="text-sm font-semibold">
+            We look forward to partnering with you to develop innovative
+            solutions from A to Z.
           </h2>
           <div className="relative w-full">
             <input
