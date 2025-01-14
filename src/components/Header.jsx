@@ -18,8 +18,8 @@ const Header = () => {
       </a>
 
       <div className="lg:hidden flex items-center gap-4">
-        <button className="bg-primary hover:bg-secondary text-white px-2 sm:px-5 rounded-md py-[1px] sm:py-2">
-          Join Now
+        <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 sm:px-5 rounded-md py-[1px] sm:py-2 font-medium">
+          Get a Quote
         </button>
         <button
           className="flex flex-col justify-center items-center"
@@ -74,8 +74,9 @@ const Header = () => {
           Contact Us
         </a>
       </div>
-      <button className="max-lg:hidden bg-primary hover:bg-secondary text-white px-5 rounded-md py-2">
-        Join Now
+
+      <button className="bg-gradient-to-r max-lg:hidden from-blue-500 to-purple-500 hover:bg-primary text-white px-2 sm:px-5 rounded-md py-[1px] sm:py-2 font-medium">
+        Get a Quote
       </button>
 
       <div
