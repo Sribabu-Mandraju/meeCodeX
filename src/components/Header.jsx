@@ -9,10 +9,10 @@ const Header = () => {
       <a className="text-white font-semibold logo flex gap-[10px] sm:gap-[20px] items-center text-[12px] sm:text-[24px]">
         <img
           src={textlogo}
-          className="sm:h-[40px] h-[50px] sm:w-[40px] w-[50px]"
+          className="sm:h-[60px] h-[40px] sm:w-[60px] w-[40px] bottom-8"
           alt="AZ LOGIC logo"
         />
-        <span className="audiowide-regular tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+        <span className="audiowide-regular tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 text-[16px] sm:text-2xl">
           AZ LOGIC
         </span>
       </a>
@@ -89,35 +89,35 @@ const Header = () => {
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          Brands
+          About Us
         </a>
         <a
           href="#features"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          Features
+          Services
         </a>
         <a
           href="#join"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          Join Us
+          Portfolio
         </a>
         <a
           href="#faq"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          FAQ
+          Testimonials
         </a>
         <a
           href="#testimonials"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          Testimonials
+          Blog
         </a>
         <a
           href="#contact"
