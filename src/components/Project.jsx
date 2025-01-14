@@ -5,7 +5,7 @@ import git from "../assets/icons/github.png";
 
 const Project = () => {
   return (
-    <div id="portfolio" className="container-p max-md:mt-20 pt-12">
+    <div id="projects" className="container-p max-md:mt-20 pt-12">
       {/* Heading Animation with whileInView */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

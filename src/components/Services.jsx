@@ -54,7 +54,7 @@ const Services = () => {
               stiffness: 80,
             }}
           >
-            <div className="text-teritary text-4xl">{<a.icon />}</div>
+            <div className="text-green-600 text-4xl">{<a.icon />}</div>
             <h1 className="text-xl font-semibold text-white text-center">
               {a.name}
             </h1>

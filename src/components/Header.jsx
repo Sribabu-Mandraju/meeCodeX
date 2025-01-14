@@ -1,5 +1,6 @@
 import { useState } from "react";
 import textlogo from "../assets/az.png";
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,8 +62,8 @@ const Header = () => {
         <a href="#services" className="cursor-pointer text-lg uline">
           Services
         </a>
-        <a href="#portfolio" className="cursor-pointer text-lg uline">
-          Portfolio
+        <a href="#projects" className="cursor-pointer text-lg uline">
+          Projects
         </a>
         <a href="#testimonials" className="cursor-pointer text-lg uline">
           Testimonials
