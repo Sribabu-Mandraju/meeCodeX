@@ -1,6 +1,5 @@
 import { useState } from "react";
 import textlogo from "../assets/az.png";
-import {Link} from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,28 +85,28 @@ const Header = () => {
         } flex-col text-white items-center gap-5 text-[0.85rem] rounded-md py-3 bg-[rgba(255,255,255,0.08)] backdrop-blur-md border border-[rgba(255,255,255,0.1)] fixed top-20 right-4 left-4 z-50`}
       >
         <a
-          href="#brands"
+          href="#about"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
           About Us
         </a>
         <a
-          href="#features"
+          href="#services"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
           Services
         </a>
         <a
-          href="#join"
+          href="#projects"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          Portfolio
+          Projects
         </a>
         <a
-          href="#faq"
+          href="#testimonials"
           className="cursor-pointer text-lg uline w-full text-center hover:bg-[rgba(255,255,255,0.1)] py-2"
           onClick={() => setIsMenuOpen(false)}
         >

@@ -6,6 +6,8 @@ import YourReq from "./components/YourReq";
 import Project from "./components/Project";
 import About from "./components/About";
 import Services from "./components/Services";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import the toast styles
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <YourReq />
       <Contact />
       <Footer />
+      <ToastContainer />
     </main>
   );
 }
