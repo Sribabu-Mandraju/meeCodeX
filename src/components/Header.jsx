@@ -52,20 +52,23 @@ const Header = () => {
       </div>
 
       <div className="max-lg:hidden px-5 flex text-white items-center gap-5 text-[0.85rem] rounded-md py-3 bg-[rgba(255,255,255,0.05)]">
-        <a href="#brands" className="cursor-pointer text-lg uline">
-          Brands
+        {/* <a href="#" className="cursor-pointer text-lg uline">
+          Home
+        </a> */}
+        <a href="#about" className="cursor-pointer text-lg uline">
+          About Us
         </a>
-        <a href="#features" className="cursor-pointer text-lg uline">
-          Features
+        <a href="#services" className="cursor-pointer text-lg uline">
+          Services
         </a>
-        <a href="#join" className="cursor-pointer text-lg uline">
-          Join Us
-        </a>
-        <a href="#faq" className="cursor-pointer text-lg uline">
-          FAQ
+        <a href="#portfolio" className="cursor-pointer text-lg uline">
+          Portfolio
         </a>
         <a href="#testimonials" className="cursor-pointer text-lg uline">
           Testimonials
+        </a>
+        <a href="#testimonials" className="cursor-pointer text-lg uline">
+          Blog
         </a>
         <a href="#contact" className="cursor-pointer text-lg uline">
           Contact Us
